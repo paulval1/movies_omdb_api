@@ -21,9 +21,12 @@ const searchMovies = (keyword) => {
 const searchForm = document.getElementById("search-movies");
 searchForm.addEventListener("submit", (event) => {
   event.preventDefault();
+  results.innerHTML = "";
   const keyword = document.querySelector("#keyword").value;
   searchMovies(keyword);
 });
 
+// show default search when page loads:
+searchMovies("Thunderbirds");
 
 
