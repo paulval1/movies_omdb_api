@@ -8,7 +8,7 @@ fetch(apiUrl)
   .then(response => response.json())
   .then((data) => {
     data.Search.forEach((movie) => {
-      const newMovie = `<li>
+      const newMovie = `<li class="list-inline-item">
       <img src="${movie.Poster}" />
       <p>${movie.Title}</p>
       </li>`
